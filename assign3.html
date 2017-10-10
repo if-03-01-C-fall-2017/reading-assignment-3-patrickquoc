@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Assignment 3</title>
+  </head>
+  <body>
+    <h1>Assingnment 3</h1>
+    <section>
+			<h2>HTML Lists</h2>
+			<p>
+				An unordered list starts with the <strong><​ul></strong> tag. Each list item starts with the <strong><​li></strong> tag. Example:<br>
+				<em>
+					<​ul><br>
+  				<​li>Example<​/li><br>
+			  	</​ul><br>
+				</em>
+        An ordered list starts with the <strong><​ol></strong> tag instead of the <​ul> tag. Example: <br>
+        <ol>
+          <li>This is an ordered list.</li>
+          <li>Ordered list are numbered.</li>
+        </ol>
+			</p>
+      <p>
+        HTML also has <strong>description lists</strong>. The <strong><​dl></strong> tag defines the description list, the <strong><​dt></strong> tag defines the term (name), and the <strong><​dd></strong> tag describes each term.
+      </p>
+      <dl>
+        <dt>HTML</dt>
+        <dd>- Hypertext Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>- Cascading Style Sheets</dd>
+      </dl>
+      <p>
+        It is also possible to have a list in a list.
+        <ul>
+         <li>Tea
+           <ul>
+             <li>Black tea</li>
+             <li>Green tea</li>
+           </ul>
+         </li>
+        </ul>
+      </p>
+      <h2>CSS Lists</h2>
+      <p>
+        CSS can set different list item markers for lists. It is possible to set a picture as a list markers. You can set a background color for lists too.<br>
+        With <strong>list-style-type</strong> you can choose implemented list style item.<br>
+        Setting images as a list item marker works with <strong>list-style-image</strong>. <em>(Example: list-style-image: url('sqpurple.gif'))</em><br>
+        You can change the list item marker position with <strong>list-style-position.</strong><em>(Example: list-style-position: inside;))</em><br>
+        The <strong>list-style-type:none</strong> property can also be used to remove the markers/bullets.<br>
+      </p>
+      <h2>HTML Tables</h2>
+      <p>
+        An HTML table is defined with the <strong><​table></strong> tag. ach table row is defined with the <strong><​tr></strong> tag. A table header is defined with the <strong><​th></strong> tag. A table cell is defined with the <strong><​td></strong> tag. Example:<br>
+        <table style="width:100%">
+         <tr>
+           <th>Continent</th>
+           <th>Country</th>
+           <th>Capital</th>
+         </tr>
+         <tr>
+           <td>Europe</td>
+           <td>Austria</td>
+           <td>Vienna</td>
+         </tr>
+         <tr>
+           <td>North America</td>
+           <td>United States of America</td>
+           <td>Washington, D.C.</td>
+         </tr>
+         <tr>
+          <td>Asia</td>
+          <td>South Korea</td>
+          <td>Seoul</td>
+        </tr>
+        </table>
+      </p>
+      <p>
+        You can set the row or column span by using for example<strong><​th colspan="2">Header<​/th></strong>. This will look like this: <br>
+        <table style="width:100%">
+         <tr>
+           <th>Name</th>
+           <th colspan="2">Grade</th>
+         </tr>
+         <tr>
+           <td>Pooh Bear</td>
+           <td>D</td>
+           <td>C+</td>
+         </tr>
+        </table>
+      </p>
+      <p>
+        You can use the <strong><​caption></strong> tag to add a caption to a table.
+      </p>
+      <h2>CSS Tables</h2>
+      <p>
+        You can specify table borders in CSS, by using the <strong>border</strong> property. In CSS this will look like this: <em>border: 1px solid black;</em><br>
+        The <strong>border-collapse</strong> property sets whether the table borders should be collapsed into a single border. Example: <em>border-collapse: collapse;</em><br>
+        Width and height of a table are defined by the <strong>width</strong> and <strong>height</strong> properties. Example: <em>height = 80px</em><br>
+        For striped tables, use the <strong>nth-child()</strong> selector and add a <strong>background-color</strong> to all even or odd table rows. Example: <em>tr:nth-child(even){background-color: #ffffff}</em><br>
+      </p>
+      <h2>CSS Borders</h2>
+      <p>
+        CSS can define which border style you want. These are the following border styles: <br>
+        <ul>
+          <li><strong>dotted</strong> - Defines a dotted border</li>
+          <li><strong>dashed</strong> - Defines a dashed border</li>
+          <li><strong>solid</strong> - Defines a solid border</li>
+          <li><strong>double</strong> - Defines a double border</li>
+          <li><strong>groove</strong> - Defines a 3D grooved border. The effect depends on the border-color value</li>
+          <li><strong>ridge</strong> - Defines a 3D ridged border. The effect depends on the border-color value</li>
+          <li><strong>inset</strong> - Defines a 3D inset border. The effect depends on the border-color value</li>
+          <li><strong>outset</strong> - Defines a 3D outset border. The effect depends on the border-color value</li>
+          <li><strong>none</strong> - Defines no border</li>
+          <li><strong>hidden</strong> - Defines a hidden border</li>
+        </ul>
+      </p>
+      <p>
+        You can change the border width, by using <strong>border-width</strong>. This is how it looks in CSS: <em>border-width: 7px;</em><br>
+        The <strong>border-color</strong> property sets the color of the border. Example: <em>border-color = #ffffff;</em><br>
+        It is possible to change the border style for each side. Each border are defined for instance like this: <em>border-bottom-style: dotted;</em> This works for bottom, top, left and right.<br>
+        To shorten your CSS code you can define the borders with only one property. This will look like this: <em>border: 5px solid red;</em>. The first border property is the <strong>width</strong>, the second one the <strong>style</strong> (which is required) and the last one the <strong>color</strong>.<br>
+        You can even make the borders round, by doing this: <em>border-radius: 5px;</em>
+      </p>
+		</section>
+  </body>
+</html>
